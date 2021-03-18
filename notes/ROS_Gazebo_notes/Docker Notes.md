@@ -1,18 +1,16 @@
 # Using the Docker Command
 
+## basic shit
+
 Using docker consists of passing it a chain of options and commands followed by arguments. The syntax takes this form:
 
     docker [option] [command] [arguments]
 
- 
-
-To view all available subcommands, type:
+To view all available sub-commands, type:
 
     docker
 
- 
-
-## As of Docker 19, the complete list of available subcommands includes:
+## As of Docker 19, the complete list of available sub-commands includes
 
 Output
 
@@ -57,29 +55,25 @@ Output
     version     Show the Docker version information
     wait        Block until one or more containers stop, then print their exit codes
 
-## To view the options available to a specific command, type:
+### To view the options available to a specific command, type:
 
     docker docker-subcommand --help
 
- 
-
-## To view system-wide information about Docker, use:
+### To view system-wide information about Docker, use:
 
     docker info
-# Working with docker images
+
+## Working with docker images
 
 Using docker images by passing the -it argument to the image/container you want to run.
 -it means to run it as a interactive shell
 s
     docker run -it hello-world
 
-Start docker 
+Start docker
 
     docker start 
 
-## commiting changes to docker 
+### commiting changes to docker
 
     docker commit -m "What you did to the image" -a "Author Name" container_id repository/new_image_name
-
- 
-
